@@ -26,6 +26,11 @@ public class FourSistersAndTheDuckbear {
         int eggsForTheDuckbear = (numberOfEggs % 4);
         System.out.println("The Duckbear gets : " + eggsForTheDuckbear + " eggs.");
 
+        for(int eggs = 0; eggs < 1000; eggs++){
+            if (eggs % 4 > eggs /4){
+                System.out.println("The duckbear gets more eggs at " + eggs + "eggs in total." );
+            }
+        }
         input.close();
     }
 }

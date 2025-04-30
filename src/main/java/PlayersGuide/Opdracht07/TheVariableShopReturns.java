@@ -14,11 +14,12 @@ type variableName = value;
 public class TheVariableShopReturns {
     public static void main(String[] args) {
 
-        // String name : Stefan
+        // String name : "endwithpuntkomma";
         String optionalValue = null;
         String firstName = "Stefan";
         String secondName = "NotGonnaSay";
         String placeOfBirth = "Enschede";
+        String email = "123fakeaccount@hotmail.com";
         // Byte size : -128 t/m 127
 
         byte newByte = -128;
@@ -57,7 +58,7 @@ public class TheVariableShopReturns {
 
 
         System.out.println(optionalValue + "\n" + firstName + "\n" + secondName + "\n" + placeOfBirth + "\n" +
-                           newByte + "\n" + areaCodeCity + "\n" + newShort + "\n" + myShort
+                           newByte + "\n" + areaCodeCity + "\n" + email + "\n" + newShort + "\n" + myShort
                            + "\n" + newInt + "\n" + myInt + "\n" + newLong + "\n" +
                            newFloat + "\n" + newDouble + "\n" + newBoolean + "\n" + newChar + char7 +
                            char1 + char2 + char3 + char4 + char5 + char6);

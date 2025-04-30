@@ -62,9 +62,10 @@ public class TheDominionOfKings {
             if (answer.equalsIgnoreCase("Y")) {
                 System.out.println("You will be re-directed to the start.");
             }else{
-                System.out.println("Thank you for using the Dominion Calculator.");
+                System.out.println("Exiting program.");
                 repeat = false;
             }
+            scanner.close();
         }
     }
 }

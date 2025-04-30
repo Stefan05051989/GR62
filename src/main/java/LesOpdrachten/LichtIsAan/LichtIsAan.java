@@ -9,6 +9,7 @@ Lesopdracht : licht is aan / lightswitch via boolean
 
 public class LichtIsAan {
     public static void main(String[] args) {
+        // aanmaken van variabele :
         boolean lichtIsAan = false;
 
         if (lichtIsAan){

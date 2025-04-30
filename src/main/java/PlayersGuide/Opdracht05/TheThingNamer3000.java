@@ -37,5 +37,7 @@ public class TheThingNamer3000 {
         i did in the program. Int stores the data of numbers, a String makes an object from the numbers.
          */
         System.out.println("The " + b + " " + a + " of " + c + " " + d + "!");
+
+        input.close();
     }
 }

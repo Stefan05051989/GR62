@@ -5,11 +5,14 @@ Stefan Kiers
 Build a program with a variable of all eight primitive Java types (as well as the ‘text’ type).
 Assign each of them a value using a literal of the correct type.
 Use System.out.println to display the contents of each variable.
+
+Syntax for declaring variables :
+type variableName = value;
  */
 
 public class TheVariableShop {
     public static void main(String[] args) {
-        String name = "Stefan";
+        String name = null;
         // String name : Stefan
         byte newByte = -128;
         // Byte size : -128 t/m 127
