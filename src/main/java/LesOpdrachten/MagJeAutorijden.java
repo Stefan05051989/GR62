@@ -1,4 +1,4 @@
-package LesOpdrachten.LichtIsAan;
+package LesOpdrachten;
 
 /*
 Stefan Kiers
