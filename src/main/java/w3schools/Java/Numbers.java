@@ -24,7 +24,22 @@ public class Numbers {
         float myFloat = 5.75f;
         double myDouble = 19.99d;
         System.out.println("My float + my double = " + (myFloat + myDouble));
-        // notice that the parameters aere inclosing the calculation!
-        // if this was not there, the outcome would be very different.
+        // notice that the parameters are inclosing the calculation in the method!
+        // if these were not there, the outcome would be very different.
+
+        /*
+        Also, a floating point can be a
+        specific number with an "e" to indicate the power of 10, like so:
+         */
+        float f1 = 35e3f;
+        // 35 (e = * 10 to the power of 3)
+        // e means :  * 10 to the power of . . .
+        // 35 * 10 * 10 * 10 + = 35000.0
+        double d1 = 12E4d;
+        // 12 (E = 10 to the power of...)
+        // 12 (E to the power 0f 4 =
+        // 12 * 10 * 10 * 10 * 10 = 120000.0
+        System.out.println(f1);
+        System.out.println(d1);
     }
 }
