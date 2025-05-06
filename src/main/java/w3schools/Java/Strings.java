@@ -10,6 +10,8 @@ public class Strings {
         be valued differently.
         Strings have to be surrounded by "double quotes", unlike char data types
         that have to be surrounded by 'single quotes'.
+
+        Strings can also be named as Object reference data types.
          */
         String greeting = "Hello Java.";
         String reply = "Hello User from the interface.";
