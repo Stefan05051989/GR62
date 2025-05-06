@@ -78,6 +78,21 @@ public class Variables {
         final int yearOfBirth = 1989;
         System.out.println(yearOfBirth);
 
+        /*
+        You can also print variables with the + operator which then functions as a mathematical solution :
+         */
+        int g = 5;
+        int h = 6;
+        System.out.println(g + h); // will output 11, as 5 + 6 = 11.
+        // You can do this with every mathmetical operator
+        System.out.println(myByte * myShort); // 1 x 2 = 2
+
+        /*
+        you can also declare multiple variables if they are the same type like this :
+         */
+        int j, k, l, m;
+        j = k = l = m = 10;
+        System.out.println(j + k + l + m);
 
     }
 }
