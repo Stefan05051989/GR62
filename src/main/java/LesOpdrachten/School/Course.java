@@ -12,9 +12,26 @@ public class Course {
       this.students.addAll(List.of(students));
 
    }
-   void printDetails(){
-      this.teacher.printDetails();
+   public Teacher getTeacher(){
+      return teacher;
+   }
+   public void setTeacher(Teacher teacher){
+      this.teacher = teacher;
+   }
+   public List<Student> getStudents(){
+      return List.copyOf(students);
+   }
+   public void addStudent(Student student){
+      this.students.add(student);
+   }
+   public void addStudents(Student... students){
       for (Student student : students){
+         this.addStudent(student);
+      }
+   }
+   void printDetails() {
+      this.teacher.printDetails();
+      for (Student student : students) {
          student.printDetails();
       }
    }

@@ -25,8 +25,6 @@ operators :
 
         y < 0     SW          S           SE
 
-        // uitkomsten zijn nog niet goed, pas ik later aan. opzet klopt verder.
-
  */
 
 import java.util.Scanner;
@@ -35,6 +33,15 @@ import java.util.Scanner;
 public class Watchtower {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String north = "North!";
+        String south = "South!";
+        String east = "East!";
+        String west = "West!";
+        String northWest = "North-West!";
+        String northEast = "North-East!";
+        String southWest = "South-West!";
+        String southEast = "South-East!";
+
 
 
         System.out.println("What column is the enemy?");
@@ -42,19 +49,18 @@ public class Watchtower {
         System.out.println("What row is the enemy?");
         int Y = scanner.nextInt();
 
-        if (X == 0 && Y == 0) System.out.println("The enemy is Here!"); // row 0 - column 0
+        if (X == 0 && Y == 0) System.out.println("The enemy is Here!");// X = 0, Y = 0.
 
 
-        if (X == 0 && Y > 0) System.out.println("The enemy is North");  // row  = column
-        if (X == 0 && Y < 0) System.out.println("The enemy is South!"); // row 0  - column -1
-        if (X < 0 && Y == 0) System.out.println("The enemy is East!"); // row  - column
-        if (X > 0 && Y == 0) System.out.println("The enemy is West!"); // row   - column
+        if (X == 0 && Y > 0) System.out.println("The enemy is " + north); // X = 0, Y = +1
+        if (X == 0 && Y < 0) System.out.println("The enemy is " + south);// X = 0, Y = -1
+        if (X > 0 && Y == 0) System.out.println("The enemy is " + east); // X = +1, Y = 0
+        if (X < 0 && Y == 0) System.out.println("The enemy is " + west); // X = 0, Y = -1
 
-        if (X > 0 && Y > 0) System.out.println("The enemy is North-West!"); // row  - column
-        if (X > 0 && Y > 0) System.out.println("The enemy is North-East!"); // row  - column
-        if (X < 0 && Y < 0) System.out.println("The enemy is South-West!"); // row  - column
-        if (X > 0 && Y < 0) System.out.println("The enemy is South-East!"); // row  - column
-
+        if (X < 0 && Y > 0) System.out.println("The enemy is " + northWest); //
+        if (X > 0 && Y > 0) System.out.println("The enemy is " + northEast); //
+        if (X < 0 && Y < 0) System.out.println("The enemy is " + southWest); //
+        if (X > 0 && Y < 0) System.out.println("The enemy is " + southEast); //
 
 
         scanner.close();
