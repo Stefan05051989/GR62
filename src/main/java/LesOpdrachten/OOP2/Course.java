@@ -1,4 +1,4 @@
-package w3schools.Java.OOP2;
+package LesOpdrachten.OOP2;
 
 import java.util.List;
 
