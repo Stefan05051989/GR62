@@ -2,17 +2,17 @@ package LesOpdrachten.School;
 
 public class Student {
 
-    String name;
-    String email;
-    int age;
-    String birthPlace;
-    String password;
+    private String name;
+    private String email;
+    private int age;
+    private String birthPlace;
+    private String password;
 
 
     public Student(String name, String email, int age, String birthPlace, String password) {
-        this.name = "Stefan";
-        this.email = "stefankiers@12345.com";
-        this.age = 23;
+        this.name = name;
+        this.email = email;
+        this.age = age;
         this.birthPlace = birthPlace;
         this.password = password;
     }
