@@ -29,7 +29,7 @@ public class ReverseString {
         System.out.println(stringBufferMethod);
 
         if (reversedString.toString().equals(originalString)){
-            System.out.println("Paling");
+            System.out.println("Palingdroom");
         } else {
             System.out.println("No Senor");
         }
