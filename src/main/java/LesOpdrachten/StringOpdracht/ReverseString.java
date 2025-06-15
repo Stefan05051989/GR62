@@ -1,4 +1,5 @@
 package LesOpdrachten.StringOpdracht;
+import java.util.Scanner;
 
 /*
 Stefan Kiers
@@ -11,9 +12,13 @@ Bonus : Check of palindrome.
 
  */
 
+import java.util.Scanner;
+
 public class ReverseString {
     public static void main(String[] args) {
-        String originalString = "saippuakivikauppias";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter input to Reverse String : ");
+        String originalString = scanner.nextLine();
         StringBuilder reversedString = new StringBuilder();
 
         // Option 1 : works!
@@ -29,9 +34,9 @@ public class ReverseString {
         System.out.println(stringBufferMethod);
 
         if (reversedString.toString().equals(originalString)){
-            System.out.println("Palingdroom");
+            System.out.println("Palindrome : Si! Palingdroom");
         } else {
-            System.out.println("No Senor");
+            System.out.println("Palindrome : No Senor. no Palindroom!");
         }
     }
 }
