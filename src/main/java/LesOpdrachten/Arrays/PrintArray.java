@@ -1,5 +1,7 @@
 package LesOpdrachten.Arrays;
+import LesOpdrachten.Methods.OddEvenTest.IsOdd;
 import java.util.Scanner;
+
 
 /*
 Stefan Kiers
@@ -30,8 +32,17 @@ public class PrintArray {
         // ask for values
         System.out.println("Enter the values : ");
         for (int i = 0; i < NUM_ITEMS; i++){
-            System.out.print("Item " + (i + 1) + ": ");
-            items[i] = scanner.nextInt();
+            int value;
+            do{
+                System.out.print("Item " + (i + 1) + ": ");
+                value = scanner.nextInt();
+                if (value < 0){
+                    System.out.println("Enter a non-negative number: ");
+                } else if (IsOdd.isOdd(value)) {
+                    System.out.println("Enter an even number : ");
+                }
+            }while (value < 0 || IsOdd.isOdd(value));
+            items[i] = value;
         }
 
         // print array in in format
