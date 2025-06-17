@@ -1,5 +1,7 @@
 package LesOpdrachten.Arrays;
 import LesOpdrachten.Methods.OddEvenTest.IsOdd;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -44,9 +46,9 @@ public class PrintArray {
             }while (value < 0 || IsOdd.isOdd(value));
             items[i] = value;
         }
-
         // print array in in format
-        System.out.print("Array contents: [");
+        System.out.println("Option 1");
+        System.out.print("Array contains: [");
         for (int i = 0; i < NUM_ITEMS; i++){
             System.out.print(items[i]);
             if (i < NUM_ITEMS - 1){
@@ -57,6 +59,10 @@ public class PrintArray {
         // printstatement so the brackets where in the wrong places
         // and had to be printed seperately.
         System.out.println("]");
+        System.out.println();
+        System.out.println("Option 2");
+        System.out.println("Array contains : ");
+        System.out.println(Arrays.toString(items));
         // Bonus for graphical print statement with *
         scanner.close();
     }
