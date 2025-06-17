@@ -24,7 +24,7 @@ waarbij de waarden worden weergegeven door het aantal sterren
 
 public class PrintArray {
     public static void main(String[] args) {
-        // ceate scanner object for input
+        // create scanner object for input
         Scanner scanner = new Scanner(System.in);
         //welcome message and var / array declaration
         System.out.println("Enter the number of items in the array : ");
@@ -46,7 +46,7 @@ public class PrintArray {
             }while (value < 0 || IsOdd.isOdd(value));
             items[i] = value;
         }
-        // print array in in format
+        // print array in in format. option 1
         System.out.println("Option 1");
         System.out.print("Array contains: [");
         for (int i = 0; i < NUM_ITEMS; i++){
@@ -55,15 +55,25 @@ public class PrintArray {
                 System.out.print(", ");
             }
         }
+        System.out.println("]"+"\n");
         // i didn't take in account that the array was just a virtual
         // printstatement so the brackets where in the wrong places
         // and had to be printed seperately.
-        System.out.println("]");
-        System.out.println();
+
+        // print array the easier way, option 2
         System.out.println("Option 2");
         System.out.println("Array contains : ");
         System.out.println(Arrays.toString(items));
-        // Bonus for graphical print statement with *
+
+        //        //Bonus for graphical print statement with *
+        System.out.println("Print in different symbols : ");
+        for (int i = 0; i < NUM_ITEMS; i++) {
+            System.out.print("Item : (" + items[i] + ")");
+            for (int j = 0; j < items[i]; j++) {
+                System.out.print("*");
+                System.out.println();
+            }
+        }
         scanner.close();
     }
 }
