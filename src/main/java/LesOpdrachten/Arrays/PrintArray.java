@@ -20,12 +20,33 @@ waarbij de waarden worden weergegeven door het aantal sterren
 
 public class PrintArray {
     public static void main(String[] args) {
+        // ceate scanner object for input
         Scanner scanner = new Scanner(System.in);
+        //welcome message and var / array declaration
+        System.out.println("Enter the number of items in the array : ");
+        int NUM_ITEMS = scanner.nextInt();
+        int[] items = new int[NUM_ITEMS];
 
+        // ask for values
+        System.out.println("Enter the values : ");
+        for (int i = 0; i < NUM_ITEMS; i++){
+            System.out.print("Item " + (i + 1) + ": ");
+            items[i] = scanner.nextInt();
+        }
 
-
-        int num_items = scanner.nextInt();
-
+        // print array in in format
+        System.out.print("Array contents: [");
+        for (int i = 0; i < NUM_ITEMS; i++){
+            System.out.print(items[i]);
+            if (i < NUM_ITEMS - 1){
+                System.out.print(", ");
+            }
+        }
+        // i didn't take in account that the array was just a virtual
+        // printstatement so the brackets where in the wrong places
+        // and had to be printed seperately.
+        System.out.println("]");
+        // Bonus for graphical print statement with *
         scanner.close();
     }
 }
