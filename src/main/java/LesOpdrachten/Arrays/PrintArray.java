@@ -65,14 +65,19 @@ public class PrintArray {
         System.out.println("Array contains : ");
         System.out.println(Arrays.toString(items));
 
-        //        //Bonus for graphical print statement with *
         System.out.println("Print in different symbols : ");
         for (int i = 0; i < NUM_ITEMS; i++) {
-            System.out.print("Item : (" + items[i] + ")");
+            System.out.print("Item " + (i + 1) + " : (" + items[i] + ")");
             for (int j = 0; j < items[i]; j++) {
                 System.out.print("*");
                 System.out.println();
             }
+
+//        //Bonus for graphical print statement with *
+//        System.out.println("Print value's of items in different symbols");
+//        for (int j = 0; j < items[NUM_ITEMS]; j++){
+//            System.out.println("*");
+//        }
         }
         scanner.close();
     }
