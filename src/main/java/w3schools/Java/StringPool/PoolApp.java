@@ -45,7 +45,8 @@ public class PoolApp {
          */
 
         account.transferAmount(name, 500);
-        account.transferAmount(thirdName, -100);
+        account.transferAmount(thirdName, 500);
+        account.transferAmount("Stefan", 500);
 
     }
     // Java also made this for extra security reasons (explanation with method)
@@ -69,7 +70,9 @@ public class PoolApp {
         The outcome is not identical because if the Strings were the same, every Stefan around the world could, or could
          not, transfer the same amount of money every time. This gives an extra security level to the program which is
          easy to implement in the app.
-
+        The massive benefit from Strings is that by the way they operate, they are completely thread-safe.
+        Meaning that they can be invoked or accessed by multiple threads but the behaviour doesnt change
+        or the data isn't corrupted.
          */
     }
 }
